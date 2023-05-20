@@ -4,6 +4,7 @@ import { BsLinkedin, BsGithub, BsYoutube, BsInstagram } from "react-icons/bs";
 const Footer = () => {
     return (
         <>
+            {/* Sign up for newsletter */}
             <footer className="py-4">
                 <div className="container-xl">
                     <div className="row align-items-center">
@@ -38,6 +39,9 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
+            {/* End: Sign up for newsletter */}
+
+            {/* Begin: information footer */}
             <footer className="py-4">
                 <div className="container-xl">
                     <div className="row">
@@ -160,6 +164,7 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
+            {/* end : information footer */}
         </>
     );
 };
