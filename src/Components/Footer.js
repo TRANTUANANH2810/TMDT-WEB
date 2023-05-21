@@ -68,28 +68,28 @@ const Footer = () => {
 
                                 <div className="social-icons d-flex align-items-center gap-30 mt-4">
                                     <a
-                                        href=""
+                                        href="#"
                                         alt=" socialIcons"
                                         className=" text-white fs-4"
                                     >
                                         <BsLinkedin />
                                     </a>
                                     <a
-                                        href=""
+                                        href="#"
                                         alt=" socialIcons"
                                         className=" text-white fs-4"
                                     >
                                         <BsGithub />
                                     </a>
                                     <a
-                                        href=""
+                                        href="#"
                                         alt=" socialIcons"
                                         className=" text-white fs-4"
                                     >
                                         <BsYoutube />
                                     </a>
                                     <a
-                                        href=""
+                                        href="#"
                                         alt=" socialIcons"
                                         className=" text-white fs-4"
                                     >
