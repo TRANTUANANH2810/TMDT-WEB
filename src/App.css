@@ -341,3 +341,45 @@ footer .input-group-text {
 }
 
 /* ========= Product Card  end here========= */
+
+/* ======== Special product ========== */
+.special-product-card {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+
+/* ======== Special product END ========== */
+
+/* famous card  */
+.famous-card .famous-content {
+    top: 10%;
+    left: 10%;
+}
+
+.famous-card img {
+    border-radius: 10px;
+}
+
+.famous-content h5 {
+    font-style: 10px;
+    line-height: 10 px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 7px;
+}
+
+.famous-content h4 {
+    font-style: 40px;
+    line-height: 38px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.famous-content p {
+    font-style: 16px;
+    line-height: 24px;
+    font-weight: 100;
+    color: #fff;
+}
+/* famous card end  */

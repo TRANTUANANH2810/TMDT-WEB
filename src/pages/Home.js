@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import BlogCard from "../Components/BlogCard";
 import ProductCard from "../Components/ProductCard";
+import SpecialProduct from "../Components/SpecialProduct";
 const Home = () => {
     return (
         <>
@@ -95,6 +96,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
             {/* Wrapper 2  */}
             <section className="home-wrapper-2 py-5">
                 <div className="container-xxl">
@@ -171,6 +173,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
             {/* Wrapper 3 categories */}
             <section className="home-wrapper-2 py-5">
                 <div className="container-xxl">
@@ -238,6 +241,8 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            {/* Feature wrapper */}
             <section className="Feature-wrapper home-wrapper-2 py-5 ">
                 <div className=" container-xxl">
                     <div className=" row">
@@ -253,6 +258,127 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            <section className="famous-wrapper home-wrapper-2 py-5">
+                <div className="container-xxl">
+                    <div className="row">
+                        <div className="col-3">
+                            <div className="famous-card position-relative">
+                                <img
+                                    src="images/famous-1.webp"
+                                    className="img-fluid"
+                                    alt="famous"
+                                />
+                                <div className="famous-content position-absolute">
+                                    <h5>Big Screen</h5>
+                                    <h4>Smart Watch series 07</h4>
+                                    <p> From $399 or $16.63/mo. For 24mo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-3">
+                            <div className="famous-card position-relative">
+                                <img
+                                    src="images/famous-2.webp"
+                                    className="img-fluid"
+                                    alt="famous"
+                                />
+                                <div className="famous-content position-absolute ">
+                                    <h5 className="text-dark">
+                                        Studio Display
+                                    </h5>
+                                    <h4 className="text-dark">
+                                        600 Nits of brightness
+                                    </h4>
+                                    <p className="text-dark">
+                                        27-ing 5k retina Display
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-3">
+                            <div className="famous-card position-relative">
+                                <img
+                                    src="images/famous-3.webp"
+                                    className="img-fluid"
+                                    alt="famous"
+                                />
+                                <div className="famous-content position-absolute ">
+                                    <h5 className="text-dark">SmartPhones</h5>
+                                    <h4 className="text-dark">
+                                        SmartPhone 13 Pro.
+                                    </h4>
+                                    <p className="text-dark">
+                                        Now in Green. From $900 or $41.62/mo .
+                                        For 24 mo. Footnote.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-3">
+                            <div className="famous-card position-relative">
+                                <img
+                                    src="images/famous-4.webp"
+                                    className="img-fluid"
+                                    alt="famous"
+                                />
+                                <div className="famous-content position-absolute ">
+                                    <h5 className="text-dark">Home Speakers</h5>
+                                    <h4 className="text-dark">
+                                        Room-Filling Sound.
+                                    </h4>
+                                    <p className="text-dark">
+                                        From $900 or $41.62/mo . For 24 mo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Special wrapper  */}
+            <section className="special-wrapper home-wrapper-2 py-5 ">
+                <div className=" container-xxl">
+                    <div className=" row">
+                        <div className="col-12">
+                            <h3 className="section-heading">Special Product</h3>
+                        </div>
+                    </div>
+                    <div className="row ">
+                        <SpecialProduct />
+                        <SpecialProduct />
+                        <SpecialProduct />
+                        <SpecialProduct />
+                    </div>
+                </div>
+            </section>
+
+            <section className="Popular-wrapper home-wrapper-2 py-5 ">
+                <div className=" container-xxl">
+                    <div className=" row">
+                        <div className="col-12">
+                            <h3 className="section-heading">
+                                Outs Popular Products
+                            </h3>
+                        </div>
+                        <div className="row">
+                            <div className="col-4">
+                                <div className="card"></div>
+                            </div>
+
+                            <div className="col-12">
+                                <div className="card"></div>
+                            </div>
+                            <ProductCard />
+                            <ProductCard />
+                            <ProductCard />
+                            <ProductCard />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* MArque wrapper */}
             <section className="marque-wrapper home-wrapper-2 py-5">
                 <div className="container-xxl">
@@ -316,6 +442,7 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Blog-wrapper */}
             <section className="Blog-wrapper home-wrapper-2 py-5 ">
                 <div className=" container-xxl">
                     <div className=" row">
