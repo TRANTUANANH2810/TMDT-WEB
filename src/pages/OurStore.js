@@ -1,9 +1,12 @@
 import React from "react";
 import BreadCrumb from "../Components/BreadCrumb";
 import ReactStars from "react-rating-stars-component";
-
 import Meta from "../Components/Meta";
+import { useState } from "react";
+import ProductCard from "../Components/ProductCard";
 const OurStore = () => {
+    const [grid, setGrid] = useState(4);
+
     return (
         <>
             <Meta title={" Our Store"} />
@@ -217,7 +220,101 @@ const OurStore = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-9"></div>
+                        <div className="col-9">
+                            <div className="filter-sort-grid mb-4">
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <div className=" d-flex align-items-center gap-10">
+                                        <p
+                                            className="mb-0"
+                                            style={{ width: " 100px" }}
+                                        >
+                                            Sort By:{" "}
+                                        </p>
+                                        <select
+                                            className="form-control form-select"
+                                            name=""
+                                            id=""
+                                        >
+                                            <option value="manual">
+                                                Featured
+                                            </option>
+
+                                            <option
+                                                value="best-selling"
+                                                selected="selected"
+                                            >
+                                                Best selling
+                                            </option>
+                                            <option value="title-ascending">
+                                                Alphabetically , A-Z
+                                            </option>
+                                            <option value="title-descending">
+                                                Alphabetically , Z-A
+                                            </option>
+                                            <option value="price-ascending">
+                                                Price, Low to high
+                                            </option>
+                                            <option value="price-descending">
+                                                Price, High to low
+                                            </option>
+                                            <option value="Created-ascending">
+                                                Date, Old to new
+                                            </option>
+                                            <option value="Created-descending">
+                                                Date, New to old
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div className="d-flex align-items-center gap-10">
+                                        <p className="totalproduct mb-0">
+                                            21 Products
+                                        </p>
+                                        <div className="d-flex align-items-center gap-10 grid">
+                                            <img
+                                                onClick={() => {
+                                                    setGrid(3);
+                                                }}
+                                                className="d-block img-fluid"
+                                                src="images/gr4.svg"
+                                                alt="grid"
+                                            />
+
+                                            <img
+                                                onClick={() => {
+                                                    setGrid(4);
+                                                }}
+                                                className="d-block img-fluid"
+                                                src="images/gr3.svg"
+                                                alt="grid"
+                                            />
+
+                                            <img
+                                                onClick={() => {
+                                                    setGrid(6);
+                                                }}
+                                                className="d-block img-fluid"
+                                                src="images/gr2.svg"
+                                                alt="grid"
+                                            />
+                                            <img
+                                                onClick={() => {
+                                                    setGrid(12);
+                                                }}
+                                                className="d-block img-fluid"
+                                                src="images/gr.svg"
+                                                alt="grid"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="product-list pb-5">
+                                <div className=" d-flex  gap-10 flex-wrap">
+                                    <ProductCard grid={grid} />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
