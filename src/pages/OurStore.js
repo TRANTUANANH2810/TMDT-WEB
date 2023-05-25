@@ -1,6 +1,6 @@
 import React from "react";
-import BreadCrumb from "../Components/BreadCrumb";
 import ReactStars from "react-rating-stars-component";
+import BreadCrumb from "../Components/BreadCrumb";
 import Meta from "../Components/Meta";
 import { useState } from "react";
 import ProductCard from "../Components/ProductCard";
