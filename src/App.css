@@ -588,14 +588,131 @@ footer .input-group-text {
     color: var(--color-1c1c1b);
 }
 
-.auth-card .signup {
+.signup {
     background-color: var(--color-febd69);
     color: var(--color-131921);
+    border: none;
 }
 
-.auth-card .signup:hover {
+.signup:hover {
     background-color: var(--color-131921);
     color: #fff;
 }
 
 /* ======== Auth card End ======== */
+
+/* ======== policy begin  ========= */
+
+.policy {
+    background-color: #fff;
+    padding: 30px;
+}
+
+/* ======== policy begin end  ========= */
+
+/* ====main product======= */
+
+.main-product-image {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.main-product-image > div {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.main-product-image img {
+    width: 100% !important;
+    height: 500px !important;
+    object-fit: cover;
+}
+
+.other-product-image {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.other-product-image > div {
+    padding: 20px;
+    width: 48%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.main-product-image .js-image-zoom__zoomed-image {
+    left: 50px !important;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 111;
+}
+
+.main-product-detail {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main-product-detail h3.title {
+    font-style: 18px;
+    font-weight: 600;
+    color: var(--color-1c1c1b);
+}
+
+.main-product-detail p.price {
+    font-style: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: var(--color-1c1c1b);
+}
+
+.t-review {
+    font-style: 13px;
+    color: var(--color-777777);
+}
+.product-heading {
+    font-style: 14px;
+    color: var(--color-1c1c1b);
+    margin-bottom: 0;
+}
+
+.product-data {
+    font-style: 12px;
+    color: var(--color-777777);
+    margin-bottom: 0;
+}
+
+/* ====main product end======= */
+
+/* ========= Cart begin ========== */
+.cart-header,
+.cart-data {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.cart-header h4 {
+    font-style: 13px;
+    color: var(--color-777777);
+}
+
+.cart-col-1 {
+    width: 40%;
+}
+
+.cart-col-2 {
+    width: 10%;
+}
+
+.cart-col-3 {
+    width: 15%;
+}
+
+.cart-col-4 {
+    width: 15%;
+}
+
+/* ========= Cart end ========== */
